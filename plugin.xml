@@ -3,7 +3,7 @@
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
     id="cordova-plugin-midi-player"
-    version="3.1.0">
+    version="3.1.9">
 
     <name>MidiPlayer</name>
 	<description>Play Midi files on iOS and Android</description>
@@ -32,8 +32,7 @@
                 <param name="ios-package" value="MidiPlayer"/>
             </feature>
         </config-file>
-        <header-file src="src/ios/MidiPlayer.h" />
-        <source-file src="src/ios/MidiPlayer.m" />
+        <source-file src="src/ios/MidiPlayer.swift" />
         <resource-file src="src/ios/sounds.sf2" />
     </platform>
 

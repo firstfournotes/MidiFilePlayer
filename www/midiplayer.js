@@ -28,25 +28,25 @@ MidiPlayer.prototype = {
             if (status) {
                 status(statusValue);
             }
-        }, error);    
+        }, error);
     },
     play: function () {
-        exec2("play", [], function() { console.log("success play"); }, function(err) { console.log("error play:" + err); });    
+        exec2("play", [], function() { console.log("success play"); }, function(err) { console.log("error play:" + err); });
     },
     pause: function () {
-        exec2("pause", [], null, null);    
+        exec2("pause", [], null, null);
     },
     stop: function () {
-        exec2("stop", [], null, null);    
+        exec2("stop", [], null, null);
     },
     getCurrentPosition: function (success, error) {
-        exec2("getCurrentPosition", [], success, error);    
+        exec2("getCurrentPosition", [], success, error);
     },
     seekTo: function (position) {
-        exec2("seekTo", [position], null, null);    
+        exec2("seekTo", [position], null, null);
     },
     release: function () {
-        exec2("release", [], null, null);    
+        exec2("release", [], null, null);
     }
 };
 
